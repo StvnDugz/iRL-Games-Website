@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <title>I.R.L. Games</title>
+</head>
+
+<body>
+
+    <!-- Navigation Menu-->
+
+    <header>
+        <div class="home-nav-logo">
+            <a href="../index.html"><img src="../images/CyberRex_1.png" alt="Developer Logo"></a>
+        </div>
+        <ul class="home-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About Us</a></li>
+            <li><a href="../pages/jobs.html">Jobs</a></li>
+            <li><a href="../pages/application.html">Apply</a></li>
+        </ul>
+    </header>
+
+    <section class="middle-about">
+        <div class="button">
+            <div class="contact-form">
+                <h3 class="contact-form-title">Personal Details</h3>
+                <form id="contact-form" onsubmit="return validate();">
+                    <div class="input_field">
+                        <input type="text" placeholder="Full Name" id="name">
+                    </div>
+                    <div class="input_field">
+                        <input type="text" placeholder="Phone Number" id="phone">
+                    </div>
+                    <div class="input_field">
+                        <input type="text" placeholder="E-mail Address" id="email">
+                    </div><br>
+                    <label>Choose a position:</label><br><br>
+                    <select id="position" name="position">
+                        <option value="none">None</option>
+                        <option value="programmer">Lead Programmer</option>
+                        <option value="animator">Lead Animator</option>
+                        <option value="e-artist">3D Environment Artist</option>
+                        <option value="c-artist">3D Character Artist</option>
+                    </select><br><br>
+                    <label>Years of experience within a 3D game production:</label><br><br>
+                    <input type="radio" id="radio1">
+                    <label>0-2 years</label><br>
+                    <input type="radio" id="radio2">
+                    <label>2-4 years</label><br>
+                    <input type="radio" id="radio3">
+                    <label>4-6 years</label><br>
+                    <input type="radio" id="radio4">
+                    <label>6 + years</label><br><br>
+                    <div class="input_field">
+                        <textarea placeholder="Cover Letter" id="message"></textarea>
+                    </div>
+                    <div id="error_message"></div>
+                    <input type="submit" class="form-control submit">
+                </form>
+            </div>
+    </section>
+
+</body>
+</section>
+
+<!--Footer-->
+
+<section class="footer">
+    <div class="center">
+        <p><i class="far fa-copyright"></i> 2020 I.R.L. Games. All rights reserved.</p>
+        <p>Cork, Ireland - Privacy Policy</p>
+    </div>
+</section>
+</body>
+<script src="../js/validation.js"></script>
+
+</html>
